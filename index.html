@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Fredoka+One&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+  <body>
+
+  <section class="title-sec colored">
+
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+       <div class="navbar-header">
+         <p class="navbar-brand col-white size4">chepa's playground</p>
+       </div>
+       <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#contactinfo" class="color-white size4">Contact</a></li>
+        <li><a href="#play" class="color-white size4">Play</a></li>
+       </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="head-title">Rock Paper Scissors!</h1>
+      </div>
+      <div class="col-md-6">
+        <img src="https://cdn.clipart.email/f8d5432d6e91d8726113a28fd372f8b9_rock-paper-scissors-scissors-clipart-full-size-clipart-_669-429.png" alt="Cartoon Rock Paper Scissors Clipart" class="title-img">
+      </div>
+    </div>
+
+  </section>
+
+  <section class="play-area" id="play">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://cdn.clipart.email/eeeec721ecfbc8f1d53ea96b1345ca87_cartoon-emoji-paper-rock-scissors-icon_512-512.png" width="350" alt="Cartoon Rock Paper Scissors Clipart" class="choice-img" id="mychoiceimg">
+        <h3 class="choices">My choice</h3>
+      </div>
+      <div class="col-md-6">
+        <img src="https://cdn.clipart.email/eeeec721ecfbc8f1d53ea96b1345ca87_cartoon-emoji-paper-rock-scissors-icon_512-512.png" width="350" alt="Cartoon Rock Paper Scissors Clipart" class="choice-img" id="yourchoiceimg">
+        <h3 class="choices">Your choice</h3>
+      </div>
+    </div>
+    <div class="mybuttonssection colored">
+      <button name="button" class="btn btn-outline-dark btn-lg mybutton rock play-button">Rock <i class="fas fa-hand-rock"></i></button>
+      <button name="button" class="btn btn-outline-dark btn-lg mybutton paper play-button">Paper <i class="fas fa-hand-paper"></i></button>
+      <button name="button" class="btn btn-outline-dark btn-lg mybutton scissors play-button">Scissors <i class="fas fa-hand-scissors"></i></button>
+      <h2 class="titleplayarea" id="whowon">Make your choice!</h2>
+
+      <button name="button" class="btn btn-outline mybutton stop-button small-button size4">Stop Playing?</button>
+      <h3 class="score">Score</h3>
+    <table class="mytable">
+      <thead class="tablehead">
+        <tr>
+          <td>Your score</td>
+          <td>My score</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="yourscore">0</td>
+          <td class="myscore">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <button name="button" class="btn btn-outline mybutton small-button play-again-button size4">Play again?</button>
+
+    </div>
+
+  </section>
+
+  <section class="footer" id="contactinfo">
+
+    <p><i class="fas fa-envelope contactlogo"></i> riya.chepa@gmail.com</p>
+    <p>© Copyright 2020 Shravya Chepa</p>
+
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
